@@ -1,0 +1,148 @@
+.heroSection {
+  width: 100%;
+  background-color: #74C69D;
+  display: flex;
+  justify-content: center;
+}
+
+.heroContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1190px;
+  height: auto; /* Adjust height dynamically */
+  padding: 20px; /* Add padding for better spacing on smaller screens */
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  max-width: 416px;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.welcomeText {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 125%;
+  color: white;
+  text-align: center;
+}
+
+.heroTitle {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 32px; /* Adjusted for smaller screens */
+  line-height: 125%;
+  color: white;
+  text-align: center;
+}
+
+.heroDescription {
+  font-family: sans-serif;
+  font-size: 14px; /* Adjusted for readability on smaller screens */
+  line-height: 125%;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+.btn {
+  width: 170px;
+  height: 48px;
+  font-size: 18px; /* Slightly smaller for smaller screens */
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.heroImageContainer {
+  width: 100%;
+  max-width: 644px;
+  height: auto; /* Allow the image to adjust dynamically */
+  text-align: center;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 1024px) {
+  .heroContainer {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .heroTitle {
+    font-size: 28px; /* Reduce title size */
+  }
+
+  .heroDescription {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContainer {
+    padding: 15px;
+  }
+
+  .heroContent {
+    max-width: 350px;
+  }
+
+  .heroTitle {
+    font-size: 24px; /* Further reduce title size */
+  }
+
+  .heroDescription {
+    font-size: 12px;
+  }
+
+  .btn {
+    width: 150px; /* Reduce button size */
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContainer {
+    gap: 10px;
+  }
+
+  .heroTitle {
+    font-size: 20px;
+  }
+
+  .heroDescription {
+    font-size: 11px;
+  }
+
+  .btn {
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+  }
+}

@@ -10,4 +10,3 @@ Technology Stack:
 
 Next Js 14
 React
-Tailwind Css

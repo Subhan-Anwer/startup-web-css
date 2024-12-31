@@ -1,0 +1,140 @@
+.partnersSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 55px;
+  width: 80%;
+  max-width: 1158px;
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 73px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partnersContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 411px;
+  height: auto;
+  text-align: center;
+}
+
+.partnersHeading {
+  width: 121px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #74C69D;
+}
+
+.partnersTitle {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 125%;
+  color: black;
+}
+
+.partnersDescription {
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 125%;
+  color: black;
+}
+
+.partnersLogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 90%;
+  max-width: 1158px;
+  height: auto;
+}
+
+.logoImage {
+  object-fit: contain;
+  /* Ensures the image keeps its aspect ratio */
+  width: auto;
+  height: auto;
+  max-height: 50px;
+  /* Adjust this for the max size */
+  max-width: 100%;
+}
+
+.btn {
+  width: 170px;
+  height: 48px;
+  font-size: 20px;
+  background-color: #212529;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 1024px) {
+  .partnersSection {
+    width: 90%;
+  }
+
+  .partnersTitle {
+    font-size: 25px;
+  }
+
+  .partnersDescription {
+    font-size: 18px;
+  }
+
+  .partnersLogos {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partnersSection {
+    gap: 40px;
+  }
+
+  .partnersTitle {
+    font-size: 22px;
+  }
+
+  .partnersDescription {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partnersSection {
+    gap: 30px;
+  }
+
+  .partnersTitle {
+    font-size: 20px;
+  }
+
+  .partnersDescription {
+    font-size: 14px;
+  }
+
+  .partnersLogos {
+    gap: 15px;
+  }
+
+  .btn {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,96 @@
+.teamSection {
+    width: 100%;
+    max-width: 1176px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin: 80px auto;
+    padding: 0 16px;
+    height: auto;
+}
+
+.titleContainer {
+    width: 100%;
+    max-width: 404px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.subHeading {
+    width: 100%;
+    max-width: 121px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #74C69D;
+}
+
+.mainHeading {
+    font-size: 28px;
+    font-family: serif;
+    font-weight: bold;
+    line-height: 125%;
+    color: #212529;
+    text-align: center;
+
+    @media (min-width: 640px) {
+        font-size: 32px;
+    }
+    @media (min-width: 1024px) {
+        font-size: 40px;
+    }
+}
+
+.description {
+    font-size: 16px;
+    line-height: 125%;
+    color: black;
+    text-align: center;
+    
+    @media (min-width: 640px) {
+        font-size: 18px;
+    }
+    @media (min-width: 1024px) {
+        font-size: 20px;
+    }
+}
+
+.cardsContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    @media (min-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 47px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .teamSection {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 47px;
+    }
+}
+
+.btn {
+    background-color: #212529;
+    color: white;
+    width: 170px;
+    height: 48px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}

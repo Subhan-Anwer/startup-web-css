@@ -1,0 +1,92 @@
+.textContainer {
+    max-width: 411px;
+    width: auto;
+    margin: 8px auto 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.worksText {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: var(--green);
+}
+
+.portfolioHeading {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: serif;
+    color: black;
+}
+
+.descriptionText {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: wider;
+    color: black;
+}
+
+.cardGrid {
+    max-width: 1187px;
+    width: 100%;
+    margin: 0 auto 16px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+    border: 2px solid blue;
+}
+
+@media screen and (min-width: 640px) {
+    .cardGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.cardContainer {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+}
+
+.buttonContainer {
+    margin-bottom: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learnMoreButton {
+    width: 120px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.learnMoreButton:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.learnMoreButton:active {
+    background-color: black;
+    color: white;
+}

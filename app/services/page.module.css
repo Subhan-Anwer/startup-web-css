@@ -1,0 +1,66 @@
+.textContainer {
+    width: auto;
+    max-width: 411px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 32px;
+    margin-bottom: 62px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: sans-serif;
+    @media (min-width: 640px) {
+        gap: 16px;
+    }
+}
+
+.text {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: #74C69D;
+    @media (min-width: 640px) {
+        font-size: 16px;
+    }
+}
+
+.text2 {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: serif;
+    color: black;
+    @media (min-width: 640px) {
+        font-size: 40px;
+    }
+}
+
+.text3 {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: black;
+    @media (min-width: 640px) {
+        font-size: 20px;
+    }
+}
+
+.cardSection {
+    color: #4B5563;
+    overflow: hidden;
+    margin-bottom: 135px;
+}
+
+.cards {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 105px;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 6px;
+}

@@ -1,11 +1,11 @@
 .textContainer {
     max-width: 411px;
     width: auto;
-    margin: 8px auto 20px auto;
+    margin: 30px auto 82px auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
 }
 
 .worksText {
@@ -13,22 +13,39 @@
     font-weight: bold;
     font-size: 12px;
     letter-spacing: 5px;
-    color: var(--green);
+    color: #74C69D;
 }
 
 .portfolioHeading {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 20px;
     font-family: serif;
     color: black;
 }
 
 .descriptionText {
-    font-size: 16px;
-    line-height: 25px;
-    letter-spacing: wider;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
     color: black;
 }
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 640px) {
+    .worksText {
+        font-size: 14px;
+    }
+
+    .portfolioHeading {
+        font-size: 40px;
+    }
+
+    .descriptionText {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
 
 .cardGrid {
     max-width: 1187px;
@@ -37,7 +54,6 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 12px;
-    border: 2px solid blue;
 }
 
 @media screen and (min-width: 640px) {
@@ -69,15 +85,18 @@
 }
 
 .learnMoreButton {
-    width: 120px;
+    width: 170px;
     height: 48px;
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: black;
     color: white;
     font-size: 16px;
     line-height: 48px;
     text-align: center;
     transition: all 0.3s ease;
+    border: none;
+    outline: none;
+    margin-top: 64px;
 }
 
 .learnMoreButton:hover {

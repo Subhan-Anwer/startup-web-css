@@ -1,0 +1,152 @@
+.textContainer {
+    width: auto;
+    max-width: 411px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 32px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    @media (min-width: 640px) {
+        gap: 16px;
+    }
+}
+
+.text {
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+    font-size: 20px;
+    @media (min-width: 640px) {
+        font-size: 45px;
+    }
+}
+
+.text2 {
+    font-size: 12px;
+    color: black;
+    letter-spacing: 0.05em;
+    font-family: sans-serif;
+    line-height: 25px;
+    @media (min-width: 640px) {
+        font-size: 20px;
+    }
+}
+
+.ContentSection {
+    max-width: 1180px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 21px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 93px;
+    font-family: sans-serif;
+}
+
+.contentContainer {
+    width: 100%;
+    min-height: 385px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    padding: 12px;
+    @media (min-width: 1024px) {
+        width: 575px;
+    }
+    @media (min-width: 640px) {
+        padding: 0;
+    }
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    @media (min-width: 640px) {
+        gap: 16px;
+    }
+}
+
+.label {
+    color: black;
+    font-size: 16px;
+    @media (min-width: 640px) {
+        font-size: 20px;
+    }
+}
+
+.input {
+    width: 100%;
+    height: 38px;
+    border: 1px solid black;
+    background-color: #EEEEEE;
+    border-radius: 6px;
+    padding-left: 8px;
+    color: black;
+    font-size: 16px;
+}
+
+.textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 38px;
+    max-height: 250px;
+    border: 1px solid black;
+    background-color: #EEEEEE;
+    border-radius: 6px;
+    padding-left: 8px;
+    color: black;
+    font-size: 16px;
+}
+
+.btn {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #242529;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    @media (min-width: 640px) {
+        font-size: 20px;
+    }
+}
+
+.btn:hover {
+    background-color: #2b3035;
+}
+
+.btn:active {
+    background-color: #141618;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+
+.imgContainer {
+    width: 100%;
+    padding: 8px;
+    @media (min-width: 1024px) {
+        width: 575px;
+        padding: 0;
+    }
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
